@@ -3,7 +3,7 @@ treinos = ["peito", "costas", "pernas", "ombro", "braços"]
 # O primeiro treino da semana está no índice 0
 print("Primeiro treino:", treinos[0])
 
-# Mostrando todos os treinos da semana
+# Mostrando todos os treinos
 print("\nTreinos da semana:")
 for treino in treinos:
     print("-", treino)
