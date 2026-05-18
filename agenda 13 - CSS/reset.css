@@ -1,0 +1,23 @@
+/* ==========================================================================
+   reset.css - Baseado no modelo de Eric Meyer
+   Objetivo: Zerar margens e paddings para garantir consistência entre navegadores.
+   ========================================================================== */
+
+html, body, div, span, h1, h2, p, img, main, section, header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box; /* Garante que as bordas e paddings não quebrem o tamanho calculado dos elementos */
+}
+
+body {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block; /* Remove espaços indesejados abaixo da imagem */
+}

@@ -1,0 +1,72 @@
+/* --- LAYOUT PRINCIPAL (FLEXBOX) --- */
+
+/* O container ativa o Flexbox para colocar as três seções lado a lado */
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap; /* Garante que o site funcione no celular */
+    padding: 30px;
+    gap: 20px;
+}
+
+/* --- PADRONIZAÇÃO COM CLASSES --- */
+
+/* Estilo básico das três colunas */
+.coluna-entretenimento {
+    flex: 1;
+    min-width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dddddd; /* Linha fina clássica em vez de sombra */
+}
+
+/* Títulos das seções */
+.coluna-entretenimento h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #111111;
+}
+
+/* Textos descritivos */
+.coluna-entretenimento p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: left; /* Alinhamento padrão, menos forçado que o justificado */
+    color: #444444;
+}
+
+/* Organização das imagens dentro da seção */
+.galeria-imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Padronização das imagens */
+.img-item {
+    width: 100%;
+    max-width: 220px;
+    height: 140px;
+    object-fit: cover; /* Mantém a proporção da foto sem distorcer */
+    margin: 0 auto;   /* Centraliza a imagem na coluna */
+    border: 1px solid #cccccc;
+}
+
+/* --- DIFERENCIAÇÃO COM IDs --- */
+/* Cada ID aplica uma cor de destaque diferente no topo da coluna */
+
+#secao-filmes {
+    border-top: 4px solid #2ecc71; /* Linha verde */
+}
+
+#secao-podcasts {
+    border-top: 4px solid #3498db; /* Linha azul */
+}
+
+#secao-games {
+    border-top: 4px solid #e74c3c; /* Linha vermelha */
+}

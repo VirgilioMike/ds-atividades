@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Entretenimento Digital</title>
+    
+    <!-- Link para o CSS Reset (Deve vir sempre primeiro) -->
+    <link rel="stylesheet" href="reset.css">
+    
+    <!-- Link para o CSS Externo -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- CSS Interno: Usado para regras gerais da página -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header {
+            padding: 30px;
+            background-color: #111;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título Principal com CSS Inline (Requisito Técnico) -->
+    <header>
+        <h1 id="titulo-portal" style="color: #00ff87; letter-spacing: 2px;">Meu Portal de Entretenimento Digital</h1>
+    </header>
+
+    <!-- Container que usará Flexbox na Etapa 3 -->
+    <main class="container-flex">
+
+        <!-- SEÇÃO 1: FILMES (ID único) -->
+        <section id="secao-filmes" class="coluna-entretenimento">
+            <h2>Filmes Brasileiros</h2>
+            <p>O cinema nacional é rico em histórias, cultura e atuações memoráveis que marcam a nossa identidade.</p>
+            
+            <div class="galeria-imagens">
+                <img src="Meu_Nome_não_É_Johnny.jpg" alt="Cartaz do filme Meu Nome não É Johnny" class="img-item">
+                <img src="O_homem_que_desafiou_o_Diabo1.jpg" alt="Cartaz do filme O Homem que Desafiou o Diabo" class="img-item">
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: PODCASTS (ID único) -->
+        <section id="secao-podcasts" class="coluna-entretenimento">
+            <h2>Podcasts de Notícias</h2>
+            <p>Para ficar por dentro de tudo o que acontece no mundo da política, economia e tecnologia diariamente.</p>
+    
+            <div class="galeria-imagens">
+                <img src="Café_da_Manhã_-_2019.jpg" alt="Logo do Podcast Café da Manhã" class="img-item">
+                <img src="Vida_de_Jornalista_-_2018.jpg" alt="Logo do Podcast Vida de Jornalista" class="img-item">
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: GAMES (ID único) -->
+        <section id="secao-games" class="coluna-entretenimento">
+            <h2>Jogos de Super Nintendo</h2>
+            <p>Uma viagem nostálgica aos anos 90 com os maiores clássicos de 16-bits que definiram gerações.</p>
+            
+            <div class="galeria-imagens">
+                <img src="Donkey_Kong_Country_2_capa.png" alt="Jogo Donkey Kong Country 2" class="img-item">
+                <img src="Super-Mario-World.jpg" alt="Jogo Super Mario World" class="img-item">
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
